@@ -25,6 +25,7 @@ Partial Class Form1
         Me.txtCustomer = New System.Windows.Forms.TextBox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.SuspendLayout()
         '
         'txtCustomer
@@ -52,11 +53,23 @@ Partial Class Form1
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Location = New System.Drawing.Point(183, 105)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(90, 17)
+        Me.RadioButton1.TabIndex = 3
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "RadioButton1"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.RadioButton1)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.txtCustomer)
@@ -70,4 +83,5 @@ Partial Class Form1
     Friend WithEvents txtCustomer As TextBox
     Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents RadioButton1 As RadioButton
 End Class
