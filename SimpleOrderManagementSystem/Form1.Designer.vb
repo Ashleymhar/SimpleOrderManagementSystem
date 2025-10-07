@@ -27,11 +27,14 @@ Partial Class Form1
         Me.btnCalculate = New System.Windows.Forms.Button()
         Me.txtSubtotal = New System.Windows.Forms.TextBox()
         Me.txtFinalTotal = New System.Windows.Forms.TextBox()
+        Me.numQuantity = New System.Windows.Forms.NumericUpDown()
+        Me.chkDiscount = New System.Windows.Forms.CheckBox()
+        CType(Me.numQuantity, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtCustomersName
         '
-        Me.txtCustomersName.Location = New System.Drawing.Point(180, 72)
+        Me.txtCustomersName.Location = New System.Drawing.Point(310, 23)
         Me.txtCustomersName.Name = "txtCustomersName"
         Me.txtCustomersName.Size = New System.Drawing.Size(100, 20)
         Me.txtCustomersName.TabIndex = 0
@@ -56,23 +59,42 @@ Partial Class Form1
         '
         'txtSubtotal
         '
-        Me.txtSubtotal.Location = New System.Drawing.Point(322, 169)
+        Me.txtSubtotal.Location = New System.Drawing.Point(310, 163)
         Me.txtSubtotal.Name = "txtSubtotal"
         Me.txtSubtotal.Size = New System.Drawing.Size(100, 20)
         Me.txtSubtotal.TabIndex = 3
         '
         'txtFinalTotal
         '
-        Me.txtFinalTotal.Location = New System.Drawing.Point(322, 207)
+        Me.txtFinalTotal.Location = New System.Drawing.Point(310, 209)
         Me.txtFinalTotal.Name = "txtFinalTotal"
         Me.txtFinalTotal.Size = New System.Drawing.Size(100, 20)
         Me.txtFinalTotal.TabIndex = 4
+        '
+        'numQuantity
+        '
+        Me.numQuantity.Location = New System.Drawing.Point(456, 73)
+        Me.numQuantity.Name = "numQuantity"
+        Me.numQuantity.Size = New System.Drawing.Size(120, 20)
+        Me.numQuantity.TabIndex = 5
+        '
+        'chkDiscount
+        '
+        Me.chkDiscount.AutoSize = True
+        Me.chkDiscount.Location = New System.Drawing.Point(456, 115)
+        Me.chkDiscount.Name = "chkDiscount"
+        Me.chkDiscount.Size = New System.Drawing.Size(68, 17)
+        Me.chkDiscount.TabIndex = 6
+        Me.chkDiscount.Text = "Discount"
+        Me.chkDiscount.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.chkDiscount)
+        Me.Controls.Add(Me.numQuantity)
         Me.Controls.Add(Me.txtFinalTotal)
         Me.Controls.Add(Me.txtSubtotal)
         Me.Controls.Add(Me.btnCalculate)
@@ -80,6 +102,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtCustomersName)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.numQuantity, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -90,4 +113,6 @@ Partial Class Form1
     Friend WithEvents btnCalculate As Button
     Friend WithEvents txtSubtotal As TextBox
     Friend WithEvents txtFinalTotal As TextBox
+    Friend WithEvents numQuantity As NumericUpDown
+    Friend WithEvents chkDiscount As CheckBox
 End Class
