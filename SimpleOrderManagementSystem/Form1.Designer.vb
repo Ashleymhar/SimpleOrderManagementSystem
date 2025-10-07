@@ -25,7 +25,8 @@ Partial Class Form1
         Me.txtCustomersName = New System.Windows.Forms.TextBox()
         Me.cmbBeverage = New System.Windows.Forms.ComboBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtSubtotal = New System.Windows.Forms.TextBox()
+        Me.txtFinalTotal = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txtCustomersName
@@ -53,19 +54,27 @@ Partial Class Form1
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'txtSubtotal
         '
-        Me.TextBox1.Location = New System.Drawing.Point(251, 182)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 3
+        Me.txtSubtotal.Location = New System.Drawing.Point(322, 169)
+        Me.txtSubtotal.Name = "txtSubtotal"
+        Me.txtSubtotal.Size = New System.Drawing.Size(100, 20)
+        Me.txtSubtotal.TabIndex = 3
+        '
+        'txtFinalTotal
+        '
+        Me.txtFinalTotal.Location = New System.Drawing.Point(322, 207)
+        Me.txtFinalTotal.Name = "txtFinalTotal"
+        Me.txtFinalTotal.Size = New System.Drawing.Size(100, 20)
+        Me.txtFinalTotal.TabIndex = 4
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtFinalTotal)
+        Me.Controls.Add(Me.txtSubtotal)
         Me.Controls.Add(Me.btnCalculate)
         Me.Controls.Add(Me.cmbBeverage)
         Me.Controls.Add(Me.txtCustomersName)
@@ -79,5 +88,6 @@ Partial Class Form1
     Friend WithEvents txtCustomersName As TextBox
     Friend WithEvents cmbBeverage As ComboBox
     Friend WithEvents btnCalculate As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtSubtotal As TextBox
+    Friend WithEvents txtFinalTotal As TextBox
 End Class
