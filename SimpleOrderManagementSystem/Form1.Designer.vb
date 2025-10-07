@@ -22,44 +22,53 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.txtCustomer = New System.Windows.Forms.TextBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.txtCustomersName = New System.Windows.Forms.TextBox()
+        Me.cmbBeverage = New System.Windows.Forms.ComboBox()
         Me.btnCalculate = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'txtCustomer
+        'txtCustomersName
         '
-        Me.txtCustomer.Location = New System.Drawing.Point(180, 72)
-        Me.txtCustomer.Name = "txtCustomer"
-        Me.txtCustomer.Size = New System.Drawing.Size(100, 20)
-        Me.txtCustomer.TabIndex = 0
+        Me.txtCustomersName.Location = New System.Drawing.Point(180, 72)
+        Me.txtCustomersName.Name = "txtCustomersName"
+        Me.txtCustomersName.Size = New System.Drawing.Size(100, 20)
+        Me.txtCustomersName.TabIndex = 0
         '
-        'ComboBox1
+        'cmbBeverage
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Espresso", "Latte", "Cappuccino", "Americano ", "Mocha"})
-        Me.ComboBox1.Location = New System.Drawing.Point(310, 72)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 1
+        Me.cmbBeverage.FormattingEnabled = True
+        Me.cmbBeverage.Items.AddRange(New Object() {"Espresso", "Latte", "Cappuccino", "Americano ", "Mocha"})
+        Me.cmbBeverage.Location = New System.Drawing.Point(310, 72)
+        Me.cmbBeverage.Name = "cmbBeverage"
+        Me.cmbBeverage.Size = New System.Drawing.Size(121, 21)
+        Me.cmbBeverage.TabIndex = 1
         '
         'btnCalculate
         '
-        Me.btnCalculate.Location = New System.Drawing.Point(334, 99)
+        Me.btnCalculate.Location = New System.Drawing.Point(333, 109)
         Me.btnCalculate.Name = "btnCalculate"
         Me.btnCalculate.Size = New System.Drawing.Size(75, 23)
         Me.btnCalculate.TabIndex = 2
         Me.btnCalculate.Text = "Calculate"
         Me.btnCalculate.UseVisualStyleBackColor = True
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(251, 182)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 3
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.btnCalculate)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.txtCustomer)
+        Me.Controls.Add(Me.cmbBeverage)
+        Me.Controls.Add(Me.txtCustomersName)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
@@ -67,7 +76,8 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents txtCustomer As TextBox
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents txtCustomersName As TextBox
+    Friend WithEvents cmbBeverage As ComboBox
     Friend WithEvents btnCalculate As Button
+    Friend WithEvents TextBox1 As TextBox
 End Class
